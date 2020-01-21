@@ -62,13 +62,36 @@
     - ***--rpcapi*** : API's offered over the HTTP-RPC interface. **Be mindful about hacks as everyone can call your RPC methods if no firewall is protecting your node.**
     - ***--ipcdisable***: Disable the IPC-RPC server. Only in case of windows.
 
-
-
-
     ![POA_Mining](./Screenshots/POA_mining.PNG)
-
-
 
 ## MyCrypto Setup
 
+   Now the nodes are mining it is time to setup the custom network to check our nodes. Follow the steps to create and connect to custom network created
+
+   ![MyCrypto](./Screenshots/myCrypto.PNG) 
+   ![Custom_Network](./Screenshots/myCrypto_Custom_setup.PNG)
+   ![Custom_Connected](./Screenshots/myCrypto_Custom_Connected.PNG)
+
+   Specify the exact Client Id that was specified while creating the genesis config file. If you don't remember what was set up it can looked up in ***networkname.json*** file. If you want to use the create a new network with same Chain ID then all the settings need to be deleted from the following location
+
+   `C:\Users\yourusername\AppData\Roaming\MyCrypto\Local Storage\leveldb`
+   `C:\Users\yourusename\AppData\Local\Ethash`
+
 ## Transactions
+
+   Now MyCrypto wallet is connected to the custom netwrok let's connect to Node1 in the network and send a couple transactions to Node2 and one of the wallet IDs specified in Pre-Funded steps
+
+   ![Open_Node1](./Screenshots/myCrypto_Node1_Keystore.PNG)
+   ![Unlock_Node1](./Screenshots/myCrypto_Node1_Unlock.PNG)
+
+    Specify Node1 password to unlock. It is same step as in the command line agruement.
+
+   ![Node1_Balance](./Screenshots/Node1_Balance.PNG)
+
+   Specify Node2's public address in To Address and select the amount you want to send.
+
+   ![Payment_Node2](./Screenshots/Payment_Node2.PNG)
+
+   Follow same steps for a Wallet Id
+
+   ![Payment_Wallet](./Screenshots/Transaction1_toWallet.PNG)
